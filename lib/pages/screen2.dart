@@ -11,7 +11,7 @@ class ScreenSecond extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          // 🔹 Top half: sea.png background
+          //  Top half: sea.png background
           Expanded(
             flex: 1,
             child: Stack(
@@ -29,7 +29,7 @@ class ScreenSecond extends StatelessWidget {
                   ),
                 ),
 
-                // 🔹 Preview button (top-left → HomePage)
+                //  Preview button (top-left → HomePage)
                 Positioned(
                   top: 40,
                   left: 20,
@@ -51,7 +51,7 @@ class ScreenSecond extends StatelessWidget {
                   ),
                 ),
 
-                // 🔹 Skip button (top-right → LocationPage)
+                // Skip button (top-right → LocationPage)
                 Positioned(
                   top: 40,
                   right: 20,
@@ -76,7 +76,7 @@ class ScreenSecond extends StatelessWidget {
             ),
           ),
 
-          // 🔹 Bottom half: blue background
+          //  Bottom half: blue background
           Expanded(
             flex: 1,
             child: Container(
@@ -116,14 +116,14 @@ class ScreenSecond extends StatelessWidget {
                   ),
                   const SizedBox(height: 30),
 
-                  // 🔹 Navigation dots
+                  //  Navigation dots
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [_dot(false), _dot(true), _dot(false)],
                   ),
                   const SizedBox(height: 20),
 
-                  // 🔹 Next button → ScreenThird (bottom side)
+                  //  Next button → ScreenThird (bottom side)
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
@@ -167,7 +167,7 @@ class ScreenSecond extends StatelessWidget {
     );
   }
 
-  // 🔹 Dot widget
+  // Dot widget
   Widget _dot(bool isActive) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 4),
