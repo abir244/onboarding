@@ -146,7 +146,7 @@ class _LocationPageState extends State<LocationPage> {
             children: [
               const SizedBox(height: 20),
 
-              // 🔹 Motivational text
+              //  Motivational text
               const Text(
                 "Welcome! Your Smart Travel Alarm",
                 textAlign: TextAlign.center,
@@ -164,11 +164,11 @@ class _LocationPageState extends State<LocationPage> {
               ),
               const SizedBox(height: 24),
 
-              // 🔹 Scenic image (rome.png)
+              //  Scenic image (rome.png)
               ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.asset(
-                  'assets/icons/rome.png', // 🔹 Make sure this image exists in your assets
+                  'assets/icons/rome.png', //  Make sure this image exists in your assets
                   height: 200,
                   width: double.infinity,
                   fit: BoxFit.cover,
@@ -176,7 +176,7 @@ class _LocationPageState extends State<LocationPage> {
               ),
               const SizedBox(height: 30),
 
-              // 🔹 Use GPS button
+              //  Use GPS button
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton.icon(
@@ -206,7 +206,7 @@ class _LocationPageState extends State<LocationPage> {
               ),
               const SizedBox(height: 16),
 
-              // 🔹 Pick location manually on map
+              //  Pick location manually on map
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton.icon(
@@ -227,7 +227,7 @@ class _LocationPageState extends State<LocationPage> {
               ),
               const SizedBox(height: 16),
 
-              // 🔹 Navigate to AlarmPage
+              //  Navigate to AlarmPage
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton.icon(
@@ -253,7 +253,7 @@ class _LocationPageState extends State<LocationPage> {
               ),
               const SizedBox(height: 20),
 
-              // 🔹 Show selected location
+              //  Show selected location
               if (userLocation != null)
                 Container(
                   padding: const EdgeInsets.all(16),
