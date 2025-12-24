@@ -3,14 +3,14 @@ import 'package:google_maps_flutter/google_maps_flutter.dart' as gmf;
 import 'package:flutter_google_places_sdk/flutter_google_places_sdk.dart';
 import 'package:intl/intl.dart';
 
-// 🔔 Notifications
+// Notifications
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
 const kGoogleApiKey = "AIzaSyAlkZ1a1_D_luKPXY1CboKrHbCGLITPtpw";
 
-// 🔔 Notification plugin
+// Notification plugin
 final FlutterLocalNotificationsPlugin notifications =
     FlutterLocalNotificationsPlugin();
 
@@ -49,7 +49,7 @@ class _AlarmPageState extends State<AlarmPage> {
   }
 
   // --------------------------------------------------------------------------
-  // 🔔 Schedule daily alarm using zonedSchedule
+  //  Schedule daily alarm using zonedSchedule
   // --------------------------------------------------------------------------
   Future<void> scheduleDailyAlarm(int id, TimeOfDay time) async {
     final androidDetails = AndroidNotificationDetails(
@@ -93,7 +93,7 @@ class _AlarmPageState extends State<AlarmPage> {
   }
 
   // --------------------------------------------------------------------------
-  // 🔍 Google Places Search
+  //  Google Places Search
   // --------------------------------------------------------------------------
   Future<void> _searchLocation(String query) async {
     final q = query.trim();
