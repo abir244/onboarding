@@ -10,7 +10,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          // 🔹 Top half: airplane image
           Expanded(
             flex: 1,
             child: Stack(
@@ -27,8 +26,6 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-
-                // 🔹 Skip button (top-right)
                 Positioned(
                   top: 40,
                   right: 20,
@@ -52,8 +49,6 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
-
-          // 🔹 Bottom half: blue background
           Expanded(
             flex: 1,
             child: Container(
@@ -79,15 +74,11 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(fontSize: 16, color: Colors.white70),
                   ),
                   const SizedBox(height: 30),
-
-                  // 🔹 Navigation dots
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [_dot(true), _dot(false), _dot(false)],
                   ),
                   const SizedBox(height: 20),
-
-                  // 🔹 Next button
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
@@ -123,7 +114,6 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // 🔹 Dot widget for navigation indicator
   Widget _dot(bool isActive) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 4),
