@@ -10,7 +10,7 @@ class ScreenThird extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          // 🔹 Top half: ball.png background
+          //  Top half: ball.png background
           Expanded(
             flex: 1,
             child: Stack(
@@ -28,7 +28,7 @@ class ScreenThird extends StatelessWidget {
                   ),
                 ),
 
-                // 🔹 Preview button (top-left → ScreenSecond)
+                //  Preview button (top-left → ScreenSecond)
                 Positioned(
                   top: 40,
                   left: 20,
@@ -50,7 +50,7 @@ class ScreenThird extends StatelessWidget {
                   ),
                 ),
 
-                // 🔹 Skip button (top-right → LocationPage) [SWAPPED]
+                // Skip button (top-right → LocationPage) [SWAPPED]
                 Positioned(
                   top: 40,
                   right: 20,
@@ -75,7 +75,7 @@ class ScreenThird extends StatelessWidget {
             ),
           ),
 
-          // 🔹 Bottom half: blue background
+          //  Bottom half: blue background
           Expanded(
             flex: 1,
             child: Container(
@@ -102,14 +102,14 @@ class ScreenThird extends StatelessWidget {
                   ),
                   const SizedBox(height: 30),
 
-                  // 🔹 Navigation dots
+                  // Navigation dots
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [_dot(false), _dot(false), _dot(true)],
                   ),
                   const SizedBox(height: 20),
 
-                  // 🔹 Next button → LocationPage [SWAPPED]
+                  // Next button → LocationPage [SWAPPED]
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
@@ -153,7 +153,7 @@ class ScreenThird extends StatelessWidget {
     );
   }
 
-  // 🔹 Dot widget
+  // Dot widget
   Widget _dot(bool isActive) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 4),
