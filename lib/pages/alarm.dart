@@ -8,7 +8,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
-const kGoogleApiKey = "AIzaSyAlkZ1a1_D_luKPXY1CboKrHbCGLITPtpw";
+const kGoogleApiKey = "AIzaSyAlkZ1a1_D_luKPXY1CboKxxxxxxxxxx";
 
 // Notification plugin
 final FlutterLocalNotificationsPlugin notifications =
